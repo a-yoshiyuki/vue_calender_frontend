@@ -18,7 +18,7 @@ export default {
   methods: {
     fetchEvents() {
       axios
-        .get('https://86d9328a09f44ac1b10512d679c2c0db.vfs.cloud9.ap-northeast-1.amazonaws.com/events')
+        .get('http://54.250.116.153:8080/events')
         .then((response) => {
           this.events = response.data;
         })
