@@ -18,7 +18,7 @@ export default {
   methods: {
     fetchEvents() {
       axios
-        .get('http://54.250.116.153:8080/events')
+        .get('http://localhost:8080/events')
         .then((response) => {
           this.events = response.data;
         })
